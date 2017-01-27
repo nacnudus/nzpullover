@@ -11,7 +11,8 @@ spreadsheet here:
 
 The spreadsheet data has been made tidy by using the
 [tidyxl](https://github.com/nacnudus/tidyxl)
-[unpivotr](https://github.com/nacnudus/unpivotr) packages.
+[unpivotr](https://github.com/nacnudus/unpivotr) packages.  See the scripts in
+[/data-raw](https://github.com/nacnudus/nzpullover/tree/master/data-raw).
 
 The New Zealand Police refreshes the data approximately quarterly.  If this
 package lags behind, then please open an issue
