@@ -2,6 +2,7 @@
 ^\.Rproj\.user$
 ^temp\.R$
 ^data-raw$
+^inst/extdata$
 ^temp.R$
 ^\.travis\.yml$
 ^appveyor\.yml$
