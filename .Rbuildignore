@@ -1,0 +1,8 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^temp\.R$
+^data-raw$
+^temp.R$
+^\.travis\.yml$
+^appveyor\.yml$
+^README\.md$
