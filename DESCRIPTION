@@ -3,7 +3,7 @@ Title: Driving Offences in New Zealand Between 2009 and 2016
 Version: 0.0.0.9000
 Authors@R: person("Duncan", "Garmonsway", email = "nacnudus@gmail.com", role = c("aut", "cre"))
 Description: Datasets of driving offences and fines in New Zealand between 2009 and 2016.
-Depends: R (>= 3.3.2)
+Depends: R (>= 3.2.5)
 License: CC0
 Encoding: UTF-8
 LazyData: true
