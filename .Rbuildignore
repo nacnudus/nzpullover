@@ -8,3 +8,6 @@
 ^appveyor\.yml$
 ^README\.md$
 ^tags$
+^README\.Rmd$
+^README\.html$
+^README-.*\.png$
