@@ -73,7 +73,7 @@ plotdata %>%
   facet_wrap(~series, nrow = 1) +
   ggtitle("New Zealand summer speed limit infringements/offences",
           subtitle = "Frequency in each speed band") +
-  xlab("speed band (km/h over the limit)") +
+  xlab("Speed band (km/h over the limit)") +
   ylab("Frequency")
 
 plotdata %>%
