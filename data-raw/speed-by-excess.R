@@ -68,4 +68,5 @@ excess_tidied <-
     mutate(month = ymd(paste(year, month, 1))) %>%
     select(-year)
 
-write_csv(excess_tidied, "./inst/extdata/speed-by-excess.csv")
+write.csv(excess_tidied, row.names = FALSE, quote = FALSE,
+          file=gzfile("./inst/extdata/speed-by-excess.csv.gz"))

@@ -113,5 +113,7 @@ fleeing_area_tidied <-
   mutate(month = ymd(paste(year, month, 1))) %>%
   select(-year, -series)
 
-write_csv(fleeing_district_tidied, "./inst/extdata/fleeing_drivers-district.csv")
-write_csv(fleeing_area_tidied, "./inst/extdata/fleeing_drivers-area.csv")
+write.csv(fleeing_district_tidied, row.names = FALSE, quote = FALSE,
+          file=gzfile("./inst/extdata/fleeing-drivers-district.csv.gz"))
+write.csv(general, row.names = FALSE, quote = FALSE,
+          file=gzfile("./inst/extdata/general-offences.csv.gz"))

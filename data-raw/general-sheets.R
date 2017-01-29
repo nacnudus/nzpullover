@@ -95,6 +95,9 @@ police_speeding_tidied <-
   mutate(month = ymd(paste(year, month, 1))) %>%
   select(-year)
 
-write_csv(general, "./inst/extdata/general-offences.csv")
-write_csv(police_speeding_tidied, "./inst/extdata/police-speeding.csv")
-write_csv(police_speeding_band, "./inst/extdata/police-speeding-speed-band.csv")
+write.csv(general, row.names = FALSE, quote = FALSE,
+          file=gzfile("./inst/extdata/general-offences.csv.gz"))
+write.csv(police_speeding_tidied, row.names = FALSE, quote = FALSE,
+          file=gzfile("./inst/extdata/police_speeding.csv.gz"))
+write.csv(police_speeding_band, row.names = FALSE, quote = FALSE,
+          file=gzfile("./inst/extdata/police-speeding-band.csv.gz"))
