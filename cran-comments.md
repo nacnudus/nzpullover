@@ -1,3 +1,12 @@
+## Resubmission
+This is a resubmission.
+
+In this version I have cited the data resource in the
+description.
+
+The reason for "checking examples ...  NONE" is that there are no functions in
+this package, only datasets.
+
 ## Test environments
 
 ### Local
