@@ -26,18 +26,6 @@ devtools::install_github("nacnudus/nzpullover")
 Example
 -------
 
-    #> Loading tidyverse: ggplot2
-    #> Loading tidyverse: tibble
-    #> Loading tidyverse: tidyr
-    #> Loading tidyverse: readr
-    #> Loading tidyverse: purrr
-    #> Loading tidyverse: dplyr
-    #> Find out what's changed in ggplot2 at
-    #> http://github.com/tidyverse/ggplot2/releases.
-    #> Conflicts with tidy packages ----------------------------------------------
-    #> filter(): dplyr, stats
-    #> lag():    dplyr, stats
-
 ![](README-example-1.png)![](README-example-2.png)
 
 ``` r

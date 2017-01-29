@@ -47,7 +47,7 @@ devtools::install_github("nacnudus/nzpullover")
 
 ## Example
 
-```{r example, echo = FALSE, fig.width = 10, fig.show = "hold"}
+```{r example, echo = FALSE, fig.width = 9, fig.show = "hold"}
 library(nzpullover)
 library(tidyverse)
 library(forcats)
