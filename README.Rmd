@@ -74,7 +74,7 @@ plotdata %>%
   ggtitle("New Zealand summer speed limit infringements/offences",
           subtitle = "Frequency in each speed band") +
   xlab("speed band (km/h over the limit)") +
-  ylab("frequency")
+  ylab("Frequency")
 
 plotdata %>%
   ggplot(aes(speed, cumprop, colour = month)) +
@@ -85,7 +85,7 @@ plotdata %>%
   ggtitle("New Zealand summer speed limit infringements/offences",
           subtitle = "Cumulative proportion in each speed band") +
   xlab("Speed band (km/h over the limit)") +
-  ylab("Frequency")
+  ylab("Cumulative proportion")
 ```
 
 ```{r, echo = TRUE}
