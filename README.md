@@ -3,7 +3,7 @@
 nzpullover
 ==========
 
-[![Travis-CI Build Status](https://travis-ci.org/nacnudus/nzpullover.svg?branch=master)](https://travis-ci.org/nacnudus/nzpullover) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/nacnudus/nzpullover?branch=master&svg=true)](https://ci.appveyor.com/project/nacnudus/nzpullover) ![Cran Status](http://www.r-pkg.org/badges/version/nzpullover) ![Cran Downloads](https://cranlogs.r-pkg.org/badges/nzpullover)
+[![Travis-CI Build Status](https://travis-ci.org/nacnudus/nzpullover.svg?branch=master)](https://travis-ci.org/nacnudus/nzpullover) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/nacnudus/nzpullover?branch=master&svg=true)](https://ci.appveyor.com/project/nacnudus/nzpullover) [![Cran Status](http://www.r-pkg.org/badges/version/nzpullover)](https://cran.r-project.org/web/packages/nzpullover/index.html) [![Cran Downloads](https://cranlogs.r-pkg.org/badges/nzpullover)](https://www.r-pkg.org/pkg/nzpullover)
 
 The nzpullover package makes available road policing data from the New Zealand Police in a convenient 'tidy' form. Offence categories include speed, alcohol, red light, restraints (seatbelts), mobile phone, fleeing drivers, and speeding police vehicles.
 
