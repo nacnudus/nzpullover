@@ -9,7 +9,7 @@ The nzpullover package makes available road policing data from the New Zealand P
 
 The original data published by the New Zealand Police is available as a spreadsheet here: <http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-september-2016>.
 
-The spreadsheet data has been made tidy by using the [tidyxl](https://github.com/nacnudus/tidyxl) [unpivotr](https://github.com/nacnudus/unpivotr) packages. See the scripts in [/data-raw](https://github.com/nacnudus/nzpullover/tree/master/data-raw). Zipped csv files are available in [/inst/extdata](https://github.com/nacnudus/nzpullover/tree/master/inst/extdata).
+The spreadsheet data has been made tidy by using the [tidyxl](https://github.com/nacnudus/tidyxl) and [unpivotr](https://github.com/nacnudus/unpivotr) packages. See the scripts in [/data-raw](https://github.com/nacnudus/nzpullover/tree/master/data-raw). Zipped csv files are available in [/inst/extdata](https://github.com/nacnudus/nzpullover/tree/master/inst/extdata).
 
 The New Zealand Police refresh the data approximately quarterly. If this package lags behind, then please open an issue <https://github.com/nacnudus/nzpullover/issues>.
 
@@ -25,6 +25,18 @@ devtools::install_github("nacnudus/nzpullover")
 
 Example
 -------
+
+    #> Loading tidyverse: ggplot2
+    #> Loading tidyverse: tibble
+    #> Loading tidyverse: tidyr
+    #> Loading tidyverse: readr
+    #> Loading tidyverse: purrr
+    #> Loading tidyverse: dplyr
+    #> Find out what's changed in ggplot2 at
+    #> http://github.com/tidyverse/ggplot2/releases.
+    #> Conflicts with tidy packages ----------------------------------------------
+    #> filter(): dplyr, stats
+    #> lag():    dplyr, stats
 
 ![](README-example-1.png)![](README-example-2.png)
 
