@@ -26,7 +26,8 @@ police vehicles.
 
 The original data published by the New Zealand Police is available as a
 spreadsheet here:
-[http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-september-2016](http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-september-2016).
+[http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-31dec2016.xlsx](http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-31dec2016.xlsx).
+Please note that this R package is not associated with the New Zealand Police.
 
 The spreadsheet data has been made tidy by using the
 [tidyxl](https://github.com/nacnudus/tidyxl) and
@@ -38,6 +39,7 @@ Zipped csv files are available in
 The New Zealand Police refresh the data approximately quarterly.  If this
 package lags behind, then please open an issue
 [https://github.com/nacnudus/nzpullover/issues](https://github.com/nacnudus/nzpullover/issues).
+The CRAN version will be updated annually.
 
 ## Installation
 

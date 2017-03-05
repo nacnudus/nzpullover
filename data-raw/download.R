@@ -1,5 +1,5 @@
-url_source <- "http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-jan2009-sep2006.xlsx"
-path_source <-  "./inst/extdata/road-policing-driver-offence-data-jan2009-sep2006.xlsx"
+url_source <- "http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-31dec2016.xlsx"
+path_source <-  "./inst/extdata/road-policing-driver-offence-data-1jan2009-31dec2016.xlsx"
 
 download.file(url_source, path_source, mode = "wb")
 

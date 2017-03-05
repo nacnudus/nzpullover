@@ -7,11 +7,11 @@ nzpullover
 
 The nzpullover package makes available road policing data from the New Zealand Police in a convenient 'tidy' form. Offence categories include speed, alcohol, red light, restraints (seatbelts), mobile phone, fleeing drivers, and speeding police vehicles.
 
-The original data published by the New Zealand Police is available as a spreadsheet here: <http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-september-2016>.
+The original data published by the New Zealand Police is available as a spreadsheet here: <http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-31dec2016.xlsx>. Please note that this R package is not associated with the New Zealand Police.
 
 The spreadsheet data has been made tidy by using the [tidyxl](https://github.com/nacnudus/tidyxl) and [unpivotr](https://github.com/nacnudus/unpivotr) packages. See the scripts in [/data-raw](https://github.com/nacnudus/nzpullover/tree/master/data-raw). Zipped csv files are available in [/inst/extdata](https://github.com/nacnudus/nzpullover/tree/master/inst/extdata).
 
-The New Zealand Police refresh the data approximately quarterly. If this package lags behind, then please open an issue <https://github.com/nacnudus/nzpullover/issues>.
+The New Zealand Police refresh the data approximately quarterly. If this package lags behind, then please open an issue <https://github.com/nacnudus/nzpullover/issues>. The CRAN version will be updated annually.
 
 Installation
 ------------
@@ -30,7 +30,7 @@ Example
 
 ``` r
 glimpse(driving_offences)
-#> Observations: 43,878
+#> Observations: 45,571
 #> Variables: 6
 #> $ category <chr> "Red Light", "Red Light", "Red Light", "Red Light", "...
 #> $ value    <dbl> 78, 105, 123, 138, 88, 101, 72, 121, 96, 157, 123, 97...
@@ -48,20 +48,20 @@ glimpse(excess)
 #> $ speed    <chr> " <11", " 11-15", " 16-20", " 21-25", " 26-30", " 31-...
 #> $ month    <date> 2009-12-01, 2009-12-01, 2009-12-01, 2009-12-01, 2009...
 glimpse(fleeing_area)
-#> Observations: 3,441
+#> Observations: 3,552
 #> Variables: 4
 #> $ value    <dbl> 0, 0, 0, 10, 11, 4, 8, 4, 7, 6, 3, 2, 7, 6, 4, 13, 10...
 #> $ district <chr> "Auckland", "Auckland", "Auckland", "Auckland", "Auck...
 #> $ area     <chr> "Auckland Central Area", "Auckland Central Area", "Au...
 #> $ month    <date> 2009-01-01, 2009-02-01, 2009-03-01, 2009-04-01, 2009...
 glimpse(fleeing_district)
-#> Observations: 1,116
+#> Observations: 1,152
 #> Variables: 3
 #> $ value    <dbl> 10, 14, 26, 22, 24, 17, 27, 19, 21, 15, 18, 14, 19, 1...
 #> $ district <chr> "Auckland City", "Auckland City", "Auckland City", "A...
 #> $ month    <date> 2009-01-01, 2009-02-01, 2009-03-01, 2009-04-01, 2009...
 glimpse(police_speeding)
-#> Observations: 5,595
+#> Observations: 5,747
 #> Variables: 5
 #> $ value    <dbl> 1, 1, 4, 2, 2, 1, 1, 3, 1, 1, 2, 2, 1, 1, 1, 2, 4, 3,...
 #> $ series   <chr> "Police vehicle speed - detections by speed camera", ...
