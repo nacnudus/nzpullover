@@ -1,7 +1,7 @@
 #' Driving offences in New Zealand
 #'
 #' A dataset containing speeding offences and fines by excess-speed band, in New
-#' Zealand between 2009 and 2016.
+#' Zealand between 2009 and 2017.
 #'
 #' @format A data frame with 16307 rows and 6 variables:
 #' \describe{
@@ -44,7 +44,7 @@
 #' July 2009.
 #'
 #' @source
-#' \url{http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-december-2016}
+#' \url{http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2017}
 #'
 #' @seealso \code{\link{driving_offences}}, \code{\link{fleeing_area}},
 #' \code{\link{fleeing_district}}, \code{\link{police_speeding}}

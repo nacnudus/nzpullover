@@ -1,10 +1,11 @@
-url_source <- "http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-31dec2016.xlsx"
-path_source <-  "./inst/extdata/road-policing-driver-offence-data-1jan2009-31dec2016.xlsx"
+url_source <- "http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-31mar2017.xlsx"
+path_source <-  "./inst/extdata/road-policing-driver-offence-data-1jan2009-31mar2017.xlsx"
 
 library(tidyxl)
 library(unpivotr)
 library(tidyverse)
 library(lubridate)
+library(stringr)
 book <- tidy_xlsx(path_source)
 
 font_rgb <- book$formats$local$font$color$rgb
@@ -29,6 +30,7 @@ tidy <- function(.anchor, cells) {
     # Two sequential NAs mark the end of the row
     extend_E(cells, boundary = ~ is.na(character) & is.na(lag(character))) %>%
     filter(character != "Total") %>%
+    mutate(character = str_trim(character)) %>%
     select(row, col, speed = character)
   .months <-
     .speeds %>%

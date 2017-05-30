@@ -1,7 +1,7 @@
 #' Driving offences in New Zealand
 #'
 #' A dataset containing driving offences, fines, and vehicle observations by
-#' cameras, in New Zealand between 2009 and 2016.
+#' cameras, in New Zealand between 2009 and 2017.
 #'
 #' The categories of offence are Red Light, Restraints, Alcohol & Drugs, Mobile
 #' phone, Camera-issued Speed, Officer-issued Speed, and Vehicles past cameras.
@@ -81,7 +81,7 @@
 #' July 2009.
 #'
 #' @source
-#' \url{http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-december-2016}
+#' \url{http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2017}
 #'
 #' @seealso \code{\link{excess}}, \code{\link{fleeing_area}},
 #' \code{\link{fleeing_district}}, \code{\link{police_speeding}}

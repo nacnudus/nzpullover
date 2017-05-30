@@ -26,7 +26,7 @@ police vehicles.
 
 The original data published by the New Zealand Police is available as a
 spreadsheet here:
-[http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-31dec2016.xlsx](http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-31dec2016.xlsx).
+[http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2017](http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2017).
 Please note that this R package is not associated with the New Zealand Police.
 
 The spreadsheet data has been made tidy by using the
@@ -52,7 +52,7 @@ devtools::install_github("nacnudus/nzpullover")
 
 ## Example
 
-```{r example, echo = FALSE, fig.width = 9, fig.show = "hold"}
+```{r example, echo = FALSE, message = FALSE, fig.width = 9, fig.show = "hold"}
 library(nzpullover)
 library(tidyverse)
 library(forcats)

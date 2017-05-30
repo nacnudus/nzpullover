@@ -2,7 +2,7 @@
 #'
 #' A dataset containing speeding vehicle detections (by cameras) of vehicles
 #' registered to Police, as well as waivers and fines, in New Zealand between
-#' 2009 and 2016.
+#' 2009 and 2017.
 #'
 #' @format A data frame with 5595 rows and 5 variables:
 #' \describe{
@@ -70,7 +70,7 @@
 #' July 2009.
 #'
 #' @source
-#' \url{http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-december-2016}
+#' \url{http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2017}
 #'
 #' @seealso \code{\link{driving_offences}}, \code{\link{excess}},
 #' \code{\link{fleeing_area}}, \code{\link{fleeing_district}}

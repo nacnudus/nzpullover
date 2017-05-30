@@ -25,12 +25,14 @@
 <script src="../pkgdown.js"></script>
 
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
   </head>
 
   <body>
@@ -79,74 +81,73 @@
 
     
     <p>A dataset containing driving offences, fines, and vehicle observations by
-cameras, in New Zealand between 2009 and 2016.</p>
+cameras, in New Zealand between 2009 and 2017.</p>
     
 
-    <pre><span class='no'>driving_offences</span></pre>
+    <pre class="usage"><span class='no'>driving_offences</span></pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 43878 rows and 6 variables:
-<dl class='dl-horizontal'>
-  <dt>category</dt><dd>Type of offence, fine or observation</dd>
-  <dt>value</dt><dd>Number of offences, value of fines in New Zealand dollars, or
-  number of observations</dd>
-  <dt>series</dt><dd>Subcategory of offence, fine or observation</dd>
-  <dt>district</dt><dd>Police district</dd>
-  <dt>area</dt><dd>Police area (subdivision of district)</dd>
-  <dt>month</dt><dd>Month of the event</dd>
-</dl></p>
+    <p>A data frame with 43878 rows and 6 variables:</p><dl class='dl-horizontal'>
+  <dt>category</dt><dd><p>Type of offence, fine or observation</p></dd>
+  <dt>value</dt><dd><p>Number of offences, value of fines in New Zealand dollars, or
+  number of observations</p></dd>
+  <dt>series</dt><dd><p>Subcategory of offence, fine or observation</p></dd>
+  <dt>district</dt><dd><p>Police district</p></dd>
+  <dt>area</dt><dd><p>Police area (subdivision of district)</p></dd>
+  <dt>month</dt><dd><p>Month of the event</p></dd>
+</dl>
     
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p><a href = 'http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-december-2016'>http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-december-2016</a></p>
+    <p><a href = 'http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2017'>http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2017</a></p>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>The categories of offence are Red Light, Restraints, Alcohol &amp; Drugs, Mobile
 phone, Camera-issued Speed, Officer-issued Speed, and Vehicles past cameras.</p>
-    <p><dl class='dl-horizontal'>
-<dt>Red Light</dt><dd>Red light running offences at intersections for both
-vehicles and pedestrians (seperated by officer issued and red light camera)</dd>
-<dt>Restraints</dt><dd> All restraint use offences (seatbelt and child restraint),
-excludes restraint equipment offences</dd>
-<dt>Alcohol &amp; Drugs</dt><dd>Offences relating to driving under the influence of
+    <dl class='dl-horizontal'>
+<dt>Red Light</dt><dd><p>Red light running offences at intersections for both
+vehicles and pedestrians (seperated by officer issued and red light camera)</p></dd>
+<dt>Restraints</dt><dd><p>All restraint use offences (seatbelt and child restraint),
+excludes restraint equipment offences</p></dd>
+<dt>Alcohol &amp; Drugs</dt><dd><p>Offences relating to driving under the influence of
 alcohol and drugs (including under 20 year old alcohol infringements) -
-Alcohol and drug combined offence types are excluded.</dd>
-<dt>Mobile phone</dt><dd> Offences for using a hand held device for calling or
-texting while driving</dd>
-<dt>Camera-issued Speed</dt><dd>Offences for exceeding the speed limit detected by
-speed cameras.</dd>
-<dt>Officer-issued Speed</dt><dd> Offences for exceeding the speed limit detected
-by Police officers</dd>
-<dt>Vehicles past cameras</dt><dd>The number of radar vehicle detections (whether
-exceeding the speed limit or otherwise) recorded by deployed speed cameras.</dd>
-</dl></p>
+Alcohol and drug combined offence types are excluded.</p></dd>
+<dt>Mobile phone</dt><dd><p>Offences for using a hand held device for calling or
+texting while driving</p></dd>
+<dt>Camera-issued Speed</dt><dd><p>Offences for exceeding the speed limit detected by
+speed cameras.</p></dd>
+<dt>Officer-issued Speed</dt><dd><p>Offences for exceeding the speed limit detected
+by Police officers</p></dd>
+<dt>Vehicles past cameras</dt><dd><p>The number of radar vehicle detections (whether
+exceeding the speed limit or otherwise) recorded by deployed speed cameras.</p></dd>
+</dl>
     <p>General notes and caveats by the New Zealand Police:</p>
-    <p>This data contains provisional data which is drawn from a dynamic operational
+<p>This data contains provisional data which is drawn from a dynamic operational
 database. This is subject to change as new information is recorded or
 recoded.</p>
-    <p>During entry, a small number of infringements were coded to an incorrect
+<p>During entry, a small number of infringements were coded to an incorrect
 Police Area (e.g., there are a small number of red light offences showing in
 Wairarapa Area where there are no traffic lights).</p>
-    <p>The data does not include cancelled infringements and proceedings, but does
+<p>The data does not include cancelled infringements and proceedings, but does
 include minor infringements cleared as Written Traffic Warnings (WTWs) since
-the adoption of Police&#39;s Written Traffic Warning Policy in 2014. As WTWs do
+the adoption of Police's Written Traffic Warning Policy in 2014. As WTWs do
 not have a fee these are not included in monetary value tables.</p>
-    <p>Legislation for the mobile phone, youth zero alcohol driving and lowered
+<p>Legislation for the mobile phone, youth zero alcohol driving and lowered
 adult alcohol driving limit infringement types were introduced in November
 2009, August 2011 and December 2014, respectively. These infringement types
 do not show in the data prior to these months.</p>
-    <p>Alcohol- and drug-specific infringements and proceedings do not include
+<p>Alcohol- and drug-specific infringements and proceedings do not include
 impaired driving offences in which the substance type is not explicitly
 identified in the offence description. Presently, no drug offences are
 processed as an infringement notice, so there is no drug-specific monetary
 fee table.</p>
-    <p>Infringement data resulting from the lowered Adult alcohol impairment limit
+<p>Infringement data resulting from the lowered Adult alcohol impairment limit
 introduced on 1 December 2014 (250mcg/litre breath and 50mg/100ml blood) are
-included in the &#39;Alcohol Specific&#39; tables, and are also broken out into
+included in the 'Alcohol Specific' tables, and are also broken out into
 separate tables for convenience.</p>
-    <p>Most speed cameras employ radar technology to detect speeding vehicles. The
+<p>Most speed cameras employ radar technology to detect speeding vehicles. The
 process of issuing a speed camera notice involves verification of the
 resulting vehicle photo to validate the detection. When counting all vehicles
 passing speed cameras (i.e., all moving vehicles complying with the speed

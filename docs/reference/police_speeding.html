@@ -25,12 +25,14 @@
 <script src="../pkgdown.js"></script>
 
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
   </head>
 
   <body>
@@ -80,38 +82,37 @@
     
     <p>A dataset containing speeding vehicle detections (by cameras) of vehicles
 registered to Police, as well as waivers and fines, in New Zealand between
-2009 and 2016.</p>
+2009 and 2017.</p>
     
 
-    <pre><span class='no'>police_speeding</span></pre>
+    <pre class="usage"><span class='no'>police_speeding</span></pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 5595 rows and 5 variables:
-<dl class='dl-horizontal'>
-  <dt>value</dt><dd>Number of speeding vehicle detections, number of waivers, or
-  value of fines in New Zealand dollars</dd>
-  <dt>series</dt><dd>The thing being counted by <code>value</code></dd>
-  <dt>district</dt><dd>Police district</dd>
-  <dt>area</dt><dd>Police area (subdivision of district)</dd>
-  <dt>month</dt><dd>Month of the event</dd>
-</dl></p>
+    <p>A data frame with 5595 rows and 5 variables:</p><dl class='dl-horizontal'>
+  <dt>value</dt><dd><p>Number of speeding vehicle detections, number of waivers, or
+  value of fines in New Zealand dollars</p></dd>
+  <dt>series</dt><dd><p>The thing being counted by <code>value</code></p></dd>
+  <dt>district</dt><dd><p>Police district</p></dd>
+  <dt>area</dt><dd><p>Police area (subdivision of district)</p></dd>
+  <dt>month</dt><dd><p>Month of the event</p></dd>
+</dl>
     
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p><a href = 'http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-december-2016'>http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-december-2016</a></p>
+    <p><a href = 'http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2017'>http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2017</a></p>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>General notes and caveats by the New Zealand Police:</p>
-    <p>This data contains provisional data which is drawn from a dynamic operational
+<p>This data contains provisional data which is drawn from a dynamic operational
 database. This is subject to change as new information is recorded or
 recoded.</p>
-    <p>The data does not include cancelled infringements and proceedings, but does
+<p>The data does not include cancelled infringements and proceedings, but does
 include minor infringements cleared as Written Traffic Warnings (WTWs) since
-the adoption of Police&#39;s Written Traffic Warning Policy in 2014. As WTWs do
+the adoption of Police's Written Traffic Warning Policy in 2014. As WTWs do
 not have a fee these are not included in monetary value tables.</p>
-    <p>Police speeding data includes only speed camera detections of vehicles
+<p>Police speeding data includes only speed camera detections of vehicles
 registered to Police that were exceeding the speed limit. The data does not
 include driver occupation or whether the vehicle was being driven while on
 Police duty; however it could be reasonably presumed that staff were on duty
@@ -130,7 +131,7 @@ excess of the speed limit are liable for the relevant penalties unless a
 legal defence applies. The Land Transport (Road User) Rule 2004 lists the
 legal defences Police have when undertaking urgent duty driving, thereby
 outlining the criteria for waiving a notice.</p>
-    <p>Please note that Police vehicle speeding data from 2014 onward cannot be
+<p>Please note that Police vehicle speeding data from 2014 onward cannot be
 compared to previous years due to a change in the way the infringements are
 recorded. A change to the recording process means that there has been an
 increase in the number of infringements recorded for 2014 when compared to
@@ -138,8 +139,8 @@ previous years. This is due to a change of process for speed camera photos of
 police vehicles with red and blue flashing lights visible in the photographs.
 Notices are now issued for many of these photos, pending an explanation from
 the driver rather the previous process of presuming an urgent duty driving
-defence and not issuing a notice.  &quot;</p>
-    <p>Most speed cameras employ radar technology to detect speeding vehicles. The
+defence and not issuing a notice.  "</p>
+<p>Most speed cameras employ radar technology to detect speeding vehicles. The
 process of issuing a speed camera notice involves verification of the
 resulting vehicle photo to validate the detection. When counting all vehicles
 passing speed cameras (i.e., all moving vehicles complying with the speed

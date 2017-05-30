@@ -15,14 +15,14 @@
   \item{month}{Month of the event}
 }}
 \source{
-\url{http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-december-2016}
+\url{http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2017}
 }
 \usage{
 driving_offences
 }
 \description{
 A dataset containing driving offences, fines, and vehicle observations by
-cameras, in New Zealand between 2009 and 2016.
+cameras, in New Zealand between 2009 and 2017.
 }
 \details{
 The categories of offence are Red Light, Restraints, Alcohol & Drugs, Mobile
