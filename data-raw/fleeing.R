@@ -115,5 +115,3 @@ fleeing_area_tidied <-
 
 write.csv(fleeing_district_tidied, row.names = FALSE, quote = FALSE,
           file=gzfile("./inst/extdata/fleeing-drivers-district.csv.gz"))
-write.csv(general, row.names = FALSE, quote = FALSE,
-          file=gzfile("./inst/extdata/general-offences.csv.gz"))
