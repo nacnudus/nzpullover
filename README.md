@@ -69,3 +69,10 @@ glimpse(police_speeding)
 #> $ area     <chr> "Auckland Central Area", "Auckland Central Area", "Au...
 #> $ month    <date> 2010-08-01, 2010-09-01, 2010-10-01, 2011-10-01, 2011...
 ```
+
+Other New Zealand datasets by the same author:
+----------------------------------------------
+
+-   [nzlifetables](https://github.com/nacnudus/nzlifetables) -- cohort life tables
+-   [nzcensus2013](https://github.com/nacnudus/nzcensus2013) -- summary statistics from the 2013 New Zealand census
+-   [nzbabynames](https://github.com/nacnudus/nzbabynames) -- the top 100 baby names annually since 1954, and annual birth statistics.
