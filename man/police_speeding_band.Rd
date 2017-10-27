@@ -82,6 +82,6 @@ July 2009.
 \seealso{
 \code{\link{driving_offences}}, \code{\link{excess}},
 \code{\link{fleeing_area}}, \code{\link{fleeing_district}},
-\code{\link{police_speeing}}
+\code{\link{police_speeding}}
 }
 \keyword{datasets}

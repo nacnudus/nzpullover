@@ -74,5 +74,5 @@
 #'
 #' @seealso \code{\link{driving_offences}}, \code{\link{excess}},
 #' \code{\link{fleeing_area}}, \code{\link{fleeing_district}},
-#' \code{\link{police_speeing}}
+#' \code{\link{police_speeding}}
 "police_speeding_band"
