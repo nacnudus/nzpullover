@@ -1,5 +1,5 @@
-url_source <- "http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-31mar2017.xlsx"
-path_source <-  "./inst/extdata/road-policing-driver-offence-data-1jan2009-31mar2017.xlsx"
+url_source <- "http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-30jun2017.xlsx"
+path_source <-  "./inst/extdata/road-policing-driver-offence-data-1jan2009-30jun2017.xlsx"
 
 library(tidyxl)
 library(unpivotr)
@@ -33,7 +33,7 @@ tidy <- function(.anchor, cells) {
   .years <-
     .months %>%
     offset_N(cells, 1) %>%
-    filter(!is.na(content),
+    filter(!is_blank,
            col %in% .months$col) %>%
     select(row, col, year = numeric)
   .data <-

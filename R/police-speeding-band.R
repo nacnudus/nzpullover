@@ -1,17 +1,17 @@
-#' Speeding police vehicles in New Zealand
+#' Speeding police vehicles in New Zealand by speed band
 #'
-#' A dataset containing speeding vehicle detections (by cameras) of vehicles
-#' registered to Police, as well as waivers and fines, in New Zealand between
-#' 2009 and 2017.
+#' A dataset containing speeding vehicle detections (by cameras) and the speed
+#' band of vehicles
+#' registered to Police 2009 and 2017.
 #'
-#' @format A data frame with 5595 rows and 5 variables:
+#' @format A data frame with 1673 rows and 6 variables:
 #' \describe{
-#'   \item{value}{Number of speeding vehicle detections, number of waivers, or
-#'   value of fines in New Zealand dollars}
+#'   \item{value}{Number of speeding vehicle detections}
 #'   \item{series}{The thing being counted by \code{value}}
 #'   \item{district}{Police district}
 #'   \item{area}{Police area (subdivision of district)}
-#'   \item{month}{Month of the event}
+#'   \item{speed}{Speed in km/h over the limit (the limit is not given)}
+#'   \item{year}{Year of the event}
 #' }
 #'
 #' @details
@@ -74,5 +74,5 @@
 #'
 #' @seealso \code{\link{driving_offences}}, \code{\link{excess}},
 #' \code{\link{fleeing_area}}, \code{\link{fleeing_district}},
-#' \code{\link{police_speeding_band}}
-"police_speeding"
+#' \code{\link{police_speeing}}
+"police_speeding_band"

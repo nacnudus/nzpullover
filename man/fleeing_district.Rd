@@ -11,7 +11,7 @@
   \item{month}{Month of the event}
 }}
 \source{
-\url{http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2017}
+\url{http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-30jun2017.xlsx}
 }
 \usage{
 fleeing_district
@@ -41,6 +41,7 @@ driver incidents are available with district-level detail only. Approximately
 }
 \seealso{
 \code{\link{driving_offences}}, \code{\link{excess}},
-\code{\link{fleeing_area}}, \code{\link{police_speeding}}
+\code{\link{fleeing_area}}, \code{\link{police_speeding}},
+\code{\link{police_speeding_band}}
 }
 \keyword{datasets}

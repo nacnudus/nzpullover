@@ -26,7 +26,7 @@ police vehicles.
 
 The original data published by the New Zealand Police is available as a
 spreadsheet here:
-[http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2017](http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2017).
+[http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-june-2017](http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-30jun2017.xlsx).
 Please note that this R package is not associated with the New Zealand Police.
 
 The spreadsheet data has been made tidy by using the
@@ -99,6 +99,7 @@ glimpse(excess)
 glimpse(fleeing_area)
 glimpse(fleeing_district)
 glimpse(police_speeding)
+glimpse(police_speeding_band)
 ```
 
 ## Other New Zealand datasets by the same author:

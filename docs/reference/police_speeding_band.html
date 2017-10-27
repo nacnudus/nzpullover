@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Driving offences in New Zealand — excess • nzpullover</title>
+<title>Speeding police vehicles in New Zealand by speed band — police_speeding_band • nzpullover</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -95,26 +95,26 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Driving offences in New Zealand</h1>
+    <h1>Speeding police vehicles in New Zealand by speed band</h1>
     </div>
 
     
-    <p>A dataset containing speeding offences and fines by excess-speed band, in New
-Zealand between 2009 and 2017.</p>
+    <p>A dataset containing speeding vehicle detections (by cameras) and the speed
+band of vehicles
+registered to Police 2009 and 2017.</p>
     
 
-    <pre class="usage"><span class='no'>excess</span></pre>
+    <pre class="usage"><span class='no'>police_speeding_band</span></pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 16307 rows and 6 variables:</p><dl class='dl-horizontal'>
-  <dt>value</dt><dd><p>Number of offences, value of fines in New Zealand dollars, or
-  number of observations</p></dd>
-  <dt>series</dt><dd><p>Officer/Camera-issued and offence/fine</p></dd>
+    <p>A data frame with 1673 rows and 6 variables:</p><dl class='dl-horizontal'>
+  <dt>value</dt><dd><p>Number of speeding vehicle detections</p></dd>
+  <dt>series</dt><dd><p>The thing being counted by <code>value</code></p></dd>
   <dt>district</dt><dd><p>Police district</p></dd>
   <dt>area</dt><dd><p>Police area (subdivision of district)</p></dd>
   <dt>speed</dt><dd><p>Speed in km/h over the limit (the limit is not given)</p></dd>
-  <dt>month</dt><dd><p>Month of the event</p></dd>
+  <dt>year</dt><dd><p>Year of the event</p></dd>
 </dl>
     
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
@@ -127,13 +127,38 @@ Zealand between 2009 and 2017.</p>
 <p>This data contains provisional data which is drawn from a dynamic operational
 database. This is subject to change as new information is recorded or
 recoded.</p>
-<p>During entry, a small number of infringements were coded to an incorrect
-Police Area (e.g., there are a small number of red light offences showing in
-Wairarapa Area where there are no traffic lights).</p>
 <p>The data does not include cancelled infringements and proceedings, but does
 include minor infringements cleared as Written Traffic Warnings (WTWs) since
 the adoption of Police's Written Traffic Warning Policy in 2014. As WTWs do
 not have a fee these are not included in monetary value tables.</p>
+<p>Police speeding data includes only speed camera detections of vehicles
+registered to Police that were exceeding the speed limit. The data does not
+include driver occupation or whether the vehicle was being driven while on
+Police duty; however it could be reasonably presumed that staff were on duty
+in the vast majority of cases.  Only in special circumstances are contract
+vehicles and patrol vehicles permitted to be driven whilst off duty.  Police
+does not maintain a database of officers issued with speeding fines while
+driving Police vehicles. The table containing waived Police speed offences is
+a subset of the numbers shown in the top table and include all waived
+reasons. Specific reasons cannot be determined without review of individual
+files. However, a notice is generally only waived when a Police officer is
+undertaking urgent duty driving in response to an incident.  Police employees
+who travel in excess of the speed limit are treated no differently to members
+of the public, and depending on the circumstances may be subject to further
+disciplinary action. All drivers of police vehicles detected travelling in
+excess of the speed limit are liable for the relevant penalties unless a
+legal defence applies. The Land Transport (Road User) Rule 2004 lists the
+legal defences Police have when undertaking urgent duty driving, thereby
+outlining the criteria for waiving a notice.</p>
+<p>Please note that Police vehicle speeding data from 2014 onward cannot be
+compared to previous years due to a change in the way the infringements are
+recorded. A change to the recording process means that there has been an
+increase in the number of infringements recorded for 2014 when compared to
+previous years. This is due to a change of process for speed camera photos of
+police vehicles with red and blue flashing lights visible in the photographs.
+Notices are now issued for many of these photos, pending an explanation from
+the driver rather the previous process of presuming an urgent duty driving
+defence and not issuing a notice.  "</p>
 <p>Most speed cameras employ radar technology to detect speeding vehicles. The
 process of issuing a speed camera notice involves verification of the
 resulting vehicle photo to validate the detection. When counting all vehicles
@@ -149,9 +174,9 @@ July 2009.</p>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p><code><a href='driving_offences.html'>driving_offences</a></code>, <code><a href='fleeing_area.html'>fleeing_area</a></code>,
-<code><a href='fleeing_district.html'>fleeing_district</a></code>, <code><a href='police_speeding.html'>police_speeding</a></code>,
-<code><a href='police_speeding_band.html'>police_speeding_band</a></code></p>
+    <p><code><a href='driving_offences.html'>driving_offences</a></code>, <code><a href='excess.html'>excess</a></code>,
+<code><a href='fleeing_area.html'>fleeing_area</a></code>, <code><a href='fleeing_district.html'>fleeing_district</a></code>,
+<code>police_speeing</code></p>
     
 
   </div>
