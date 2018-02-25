@@ -1,3 +1,9 @@
+# nzpullover 0.2.0
+
+* Updated with data up to June 2017.
+* Added the `police_speeding_band` dataset, which was being imported but not
+  being published.
+
 # nzpullover 0.1.0
 
 * Updated with data up to March 2017.
