@@ -1,4 +1,4 @@
-# nzpullover 0.2.0.9000
+# nzpullover 0.3.0
 
 * Updated with data up to December 2017 (the September quarter was skipped by
     the NZ Police).
