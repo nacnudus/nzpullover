@@ -5,12 +5,14 @@ library(tidyxl)
 library(unpivotr)
 library(tidyverse)
 library(lubridate)
-book <- tidy_xlsx(path_source)
 
-font_rgb <- book$formats$local$font$color$rgb
-font_size <- book$formats$local$font$size
+cells <- xlsx_cells(path_source)
+formats <- xlsx_formats(path_source)
 
-fleeing <- book$data[["Fleeing Drivers" ]]
+font_rgb <- formats$local$font$color$rgb
+font_size <- formats$local$font$size
+
+fleeing <- filter(cells, sheet == "Fleeing Drivers")
 
 # The first table on the sheet "Fleeing Drivers" is similar to the first
 # tranche, except that "Sum:" is in the first, not the second, column, and there

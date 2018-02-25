@@ -1,3 +1,7 @@
+# nzpullover 0.2.0.9000
+
+* Updated the code for the latest version of `tidyxl`.
+
 # nzpullover 0.2.0
 
 * Updated with data up to June 2017.

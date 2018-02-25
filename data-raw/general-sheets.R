@@ -6,10 +6,11 @@ library(unpivotr)
 library(tidyverse)
 library(lubridate)
 
-book <- tidy_xlsx(path_source)
+cells <- xlsx_cells(path_source)
+formats <- xlsx_formats(path_source)
 
-font_rgb <- book$formats$local$font$color$rgb
-font_size <- book$formats$local$font$size
+font_rgb <- formats$local$font$color$rgb
+font_size <- formats$local$font$size
 
 tidy <- function(.anchor, cells) {
   districts <-
@@ -66,18 +67,22 @@ tidy_sheets <- function(sheet) {
 }
 
 general <-
-  book$data[c("Red Light"
-              , "Restraints"
-              , "Alcohol & Drugs"
-              , "Mobile phone"
-              , "Camera-issued Speed"
-              , "Vehicles past cameras"
-              , "Officer-issued Speed")] %>%
-  map_df(tidy_sheets, .id = "category") %>%
+  cells %>%
+  nest(-sheet) %>%
+  filter(sheet %in% c("Red Light"
+                      , "Restraints"
+                      , "Alcohol & Drugs"
+                      , "Mobile phone"
+                      , "Camera-issued Speed"
+                      , "Vehicles past cameras"
+                      , "Officer-issued Speed")) %>%
+  mutate(data = map(data, tidy_sheets)) %>%
+  unnest() %>%
+  rename(category = sheet) %>%
   mutate(month = ymd(paste(year, month, 1))) %>%
   select(-year)
 
-police_speeding <- book$data[["Police Speeding" ]]
+police_speeding <- filter(cells, sheet == "Police Speeding")
 police_speeding_tidied <-
   police_speeding %>%
   get_series %>%

@@ -6,10 +6,12 @@ library(unpivotr)
 library(tidyverse)
 library(lubridate)
 library(stringr)
-book <- tidy_xlsx(path_source)
 
-font_rgb <- book$formats$local$font$color$rgb
-font_size <- book$formats$local$font$size
+cells <- xlsx_cells(path_source)
+formats <- xlsx_formats(path_source)
+
+font_rgb <- formats$local$font$color$rgb
+font_size <- formats$local$font$size
 
 tidy <- function(.anchor, cells) {
   districts <-
@@ -58,7 +60,7 @@ tidy <- function(.anchor, cells) {
     select(-row, -col)
 }
 
-excess <- book$data[["Speed by Excess Dec-Jan" ]]
+excess <- filter(cells, sheet == "Speed by Excess Dec-Jan")
 excess_tidied <-
   excess %>%
     filter(font_rgb[local_format_id] == "FFFF0000", # Red
