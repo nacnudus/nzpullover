@@ -31,7 +31,7 @@ phone, Camera-issued Speed, Officer-issued Speed, and Vehicles past cameras.
 
 \describe{
 \item{Red Light}{Red light running offences at intersections for both
-vehicles and pedestrians (seperated by officer issued and red light camera)}
+vehicles and pedestrians (separated by officer issued and red light camera)}
 \item{Restraints}{ All restraint use offences (seatbelt and child restraint),
 excludes restraint equipment offences}
 \item{Alcohol & Drugs}{Offences relating to driving under the influence of
@@ -88,8 +88,8 @@ as Police record speed camera notice details separately from raw vehicle
 counts. The total number of vehicles detected by speed cameras on deployment
 may therefore include a small number of false radar detections. Note also
 that this data starts from August 2009 as there were some technical issues
-affecting the rollout of digital mobile cameras primarily between January and
-July 2009.
+affecting the roll-out of digital mobile cameras primarily between January
+and July 2009.
 }
 \seealso{
 \code{\link{excess}}, \code{\link{fleeing_area}},
