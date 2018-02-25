@@ -1,5 +1,5 @@
-url_source <- "http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-30jun2017.xlsx"
-path_source <-  "./inst/extdata/road-policing-driver-offence-data-1jan2009-30jun2017.xlsx"
+url_source <- "http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-31dec2017.xlsx"
+path_source <-  "./inst/extdata/road-policing-driver-offence-data-1jan2009-31dec2017.xlsx"
 
 library(tidyxl)
 library(unpivotr)

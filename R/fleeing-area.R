@@ -31,7 +31,7 @@
 #' 96% of incidents are were recorded with Area-level detail.
 #'
 #' @source
-#' \url{http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-30jun2017.xlsx}
+#' \url{http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-december-2017}
 #'
 #' @seealso \code{\link{driving_offences}}, \code{\link{excess}},
 #' \code{\link{fleeing_district}}, \code{\link{police_speeding}},
