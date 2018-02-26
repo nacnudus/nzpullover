@@ -8,7 +8,7 @@ output: github_document
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "README-"
+  fig.path = "figures/README-"
 )
 ```
 
@@ -51,6 +51,8 @@ devtools::install_github("nacnudus/nzpullover")
 ```
 
 ## Example
+
+Scroll to the bottom for lots more graphs.
 
 ```{r example, echo = FALSE, message = FALSE, fig.width = 9, fig.show = "hold"}
 library(nzpullover)
@@ -111,3 +113,38 @@ glimpse(police_speeding_band)
 * [nzbabynames](https://github.com/nacnudus/nzbabynames) -- the top 100 baby
   names annually since 1954, and annual birth statistics.
 
+## Lots more graphs
+
+```{r, echo = FALSE, warning = FALSE}
+library(tidyverse)
+library(fs)
+library(nzpullover)
+
+theme_set(theme_grey() + theme_minimal())
+
+all_months <- tibble(month = seq(min(driving_offences$month),
+                                 max(driving_offences$month),
+                                 by = "month"))
+
+timeseries <- function(series) {
+  series_plot <-
+  driving_offences %>%
+    filter(series == rlang::UQ(series)) %>%
+    group_by(month) %>%
+    summarise(value = sum(value)) %>%
+    right_join(all_months, by = "month") %>%
+    ggplot(aes(month, value)) +
+    geom_line() +
+    geom_point() +
+    scale_y_continuous(limits = c(0, NA), labels = scales::comma) +
+    xlab("") +
+    ylab("") +
+    ggtitle(str_wrap(series))
+  print(series_plot)
+}
+
+driving_offences %>%
+  distinct(series) %>%
+  pull(series) %>%
+  walk(timeseries)
+```

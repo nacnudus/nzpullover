@@ -47,7 +47,9 @@ devtools::install_github("nacnudus/nzpullover")
 
 ## Example
 
-![](README-example-1.png)![](README-example-2.png)
+Scroll to the bottom for lots more graphs.
+
+![](figures/README-example-1.png)![](figures/README-example-2.png)
 
 ``` r
 glimpse(driving_offences)
@@ -107,4 +109,9 @@ glimpse(police_speeding_band)
   - [nzcensus2013](https://github.com/nacnudus/nzcensus2013) – summary
     statistics from the 2013 New Zealand census
   - [nzbabynames](https://github.com/nacnudus/nzbabynames) – the top 100
-    baby names annually since 1954, and annual birth statistics.
+    baby names annually since 1954, and annual birth
+statistics.
+
+## Lots more graphs
+
+![](figures/README-unnamed-chunk-3-1.png)<!-- -->![](figures/README-unnamed-chunk-3-2.png)<!-- -->![](figures/README-unnamed-chunk-3-3.png)<!-- -->![](figures/README-unnamed-chunk-3-4.png)<!-- -->![](figures/README-unnamed-chunk-3-5.png)<!-- -->![](figures/README-unnamed-chunk-3-6.png)<!-- -->![](figures/README-unnamed-chunk-3-7.png)<!-- -->![](figures/README-unnamed-chunk-3-8.png)<!-- -->![](figures/README-unnamed-chunk-3-9.png)<!-- -->![](figures/README-unnamed-chunk-3-10.png)<!-- -->![](figures/README-unnamed-chunk-3-11.png)<!-- -->![](figures/README-unnamed-chunk-3-12.png)<!-- -->![](figures/README-unnamed-chunk-3-13.png)<!-- -->![](figures/README-unnamed-chunk-3-14.png)<!-- -->![](figures/README-unnamed-chunk-3-15.png)<!-- -->![](figures/README-unnamed-chunk-3-16.png)<!-- -->![](figures/README-unnamed-chunk-3-17.png)<!-- -->![](figures/README-unnamed-chunk-3-18.png)<!-- -->![](figures/README-unnamed-chunk-3-19.png)<!-- -->![](figures/README-unnamed-chunk-3-20.png)<!-- -->
