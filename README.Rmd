@@ -97,6 +97,7 @@ plotdata %>%
 
 ```{r, echo = TRUE}
 glimpse(driving_offences)
+glimpse(static_camera)
 glimpse(excess)
 glimpse(fleeing_area)
 glimpse(fleeing_district)

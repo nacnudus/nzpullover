@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Driving offences in New Zealand — excess • nzpullover</title>
+<title>Speeeding offences detected by static cameras in New Zealand — static_camera • nzpullover</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -28,10 +28,10 @@
 
 
 
-<meta property="og:title" content="Driving offences in New Zealand — excess" />
+<meta property="og:title" content="Speeeding offences detected by static cameras in New Zealand — static_camera" />
 
-<meta property="og:description" content="A dataset containing speeding offences and fines by excess-speed band, in New
-Zealand between 2009 and 2018." />
+<meta property="og:description" content="A dataset containing driving speed offences, fines, and vehicle observations by
+static cameras, in New Zealand between 2009 and 2018." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -108,29 +108,31 @@ Zealand between 2009 and 2018." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Driving offences in New Zealand</h1>
-    <small class="dont-index">Source: <a href='https://github.com/nacnudus/nzpullover/blob/master/R/excess.R'><code>R/excess.R</code></a></small>
-    <div class="hidden name"><code>excess.Rd</code></div>
+    <h1>Speeeding offences detected by static cameras in New Zealand</h1>
+    <small class="dont-index">Source: <a href='https://github.com/nacnudus/nzpullover/blob/master/R/static-camera.R'><code>R/static-camera.R</code></a></small>
+    <div class="hidden name"><code>static_camera.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>A dataset containing speeding offences and fines by excess-speed band, in New
-Zealand between 2009 and 2018.</p>
+    <p>A dataset containing driving speed offences, fines, and vehicle observations by
+static cameras, in New Zealand between 2009 and 2018.</p>
     
     </div>
 
-    <pre class="usage"><span class='no'>excess</span></pre>
+    <pre class="usage"><span class='no'>static_camera</span></pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 16307 rows and 6 variables:</p><dl class='dl-horizontal'>
+    <p>A data frame with 5296 rows and 8 variables:</p><dl class='dl-horizontal'>
   <dt>value</dt><dd><p>Number of offences, value of fines in New Zealand dollars, or
   number of observations</p></dd>
-  <dt>series</dt><dd><p>Officer/Camera-issued and offence/fine</p></dd>
+  <dt>series</dt><dd><p>Subcategory of offence, fine or observation</p></dd>
   <dt>district</dt><dd><p>Police district</p></dd>
   <dt>area</dt><dd><p>Police area (subdivision of district)</p></dd>
-  <dt>speed</dt><dd><p>Speed in km/h over the limit (the limit is not given)</p></dd>
+  <dt>site</dt><dd><p>Site code of the site of the camera</p></dd>
+  <dt>road</dt><dd><p>Road name where the camera was sited</p></dd>
+  <dt>section</dt><dd><p>Description of where along the road the camera was sited</p></dd>
   <dt>month</dt><dd><p>Month of the event</p></dd>
 </dl>
     
@@ -140,13 +142,11 @@ Zealand between 2009 and 2018.</p>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>General notes and caveats by the New Zealand Police:</p>
+    <p>Mobile speed camera data is in the <code><a href='driving_offences.html'>driving_offences</a></code> dataset.</p>
+<p>General notes and caveats by the New Zealand Police:</p>
 <p>This data contains provisional data which is drawn from a dynamic operational
 database. This is subject to change as new information is recorded or
 recoded.</p>
-<p>During entry, a small number of infringements were coded to an incorrect
-Police Area (e.g., there are a small number of red light offences showing in
-Wairarapa Area where there are no traffic lights).</p>
 <p>The data does not include cancelled infringements and proceedings, but does
 include minor infringements cleared as Written Traffic Warnings (WTWs) since
 the adoption of Police's Written Traffic Warning Policy in 2014. As WTWs do
@@ -161,14 +161,14 @@ as Police record speed camera notice details separately from raw vehicle
 counts. The total number of vehicles detected by speed cameras on deployment
 may therefore include a small number of false radar detections. Note also
 that this data starts from August 2009 as there were some technical issues
-affecting the rollout of digital mobile cameras primarily between January and
-July 2009.</p>
+affecting the roll-out of digital mobile cameras primarily between January
+and July 2009.</p>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <div class='dont-index'><p><code><a href='driving_offences.html'>driving_offences</a></code>, <code><a href='fleeing_area.html'>fleeing_area</a></code>,
+    <div class='dont-index'><p><code><a href='excess.html'>excess</a></code>, <code><a href='fleeing_area.html'>fleeing_area</a></code>,
 <code><a href='fleeing_district.html'>fleeing_district</a></code>, <code><a href='police_speeding.html'>police_speeding</a></code>,
-<code><a href='police_speeding_band.html'>police_speeding_band</a></code>, <code><a href='static_camera.html'>static_camera</a></code></p></div>
+<code><a href='police_speeding_band.html'>police_speeding_band</a></code>, <code><a href='driving_offences.html'>driving_offences</a></code></p></div>
     
 
   </div>

@@ -18,13 +18,23 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
+<meta property="og:title" content="Driving offences in New Zealand — driving_offences" />
+
+<meta property="og:description" content="A dataset containing driving offences, fines, and vehicle observations by
+cameras, in New Zealand between 2009 and 2018." />
+<meta name="twitter:card" content="summary" />
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -34,16 +44,14 @@
 <![endif]-->
 
 
-<!-- Google analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45097885-6"></script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  ga('create', 'UA-45097885-6', 'auto');
-  ga('send', 'pageview');
-
+  gtag('config', 'UA-45097885-6');
 </script>
 
   </head>
@@ -59,8 +67,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">nzpullover</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">nzpullover</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.4.0</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -73,7 +85,7 @@
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
-  <a href="../news/index.html">News</a>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       
@@ -85,6 +97,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -92,22 +105,26 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Driving offences in New Zealand</h1>
+    <small class="dont-index">Source: <a href='https://github.com/nacnudus/nzpullover/blob/master/R/driving-offences.R'><code>R/driving-offences.R</code></a></small>
+    <div class="hidden name"><code>driving_offences.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>A dataset containing driving offences, fines, and vehicle observations by
-cameras, in New Zealand between 2009 and 2017.</p>
+cameras, in New Zealand between 2009 and 2018.</p>
     
+    </div>
 
     <pre class="usage"><span class='no'>driving_offences</span></pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 43878 rows and 6 variables:</p><dl class='dl-horizontal'>
+    <p>A data frame with 60423 rows and 6 variables:</p><dl class='dl-horizontal'>
   <dt>category</dt><dd><p>Type of offence, fine or observation</p></dd>
   <dt>value</dt><dd><p>Number of offences, value of fines in New Zealand dollars, or
   number of observations</p></dd>
@@ -119,12 +136,13 @@ cameras, in New Zealand between 2009 and 2017.</p>
     
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p><a href='http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-december-2017'>http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-december-2017</a></p>
+    <p><a href='http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2018'>http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2018</a></p>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>The categories of offence are Red Light, Restraints, Alcohol &amp; Drugs, Mobile
-phone, Camera-issued Speed, Officer-issued Speed, and Vehicles past cameras.</p>
+phone, Mobile-camera-issued Speed, Officer-issued Speed, and Vehicles past
+cameras.</p>
     <dl class='dl-horizontal'>
 <dt>Red Light</dt><dd><p>Red light running offences at intersections for both
 vehicles and pedestrians (separated by officer issued and red light camera)</p></dd>
@@ -136,7 +154,8 @@ Alcohol and drug combined offence types are excluded.</p></dd>
 <dt>Mobile phone</dt><dd><p>Offences for using a hand held device for calling or
 texting while driving</p></dd>
 <dt>Camera-issued Speed</dt><dd><p>Offences for exceeding the speed limit detected by
-speed cameras.</p></dd>
+mobile speed cameras.  Static speed camera data is in the
+<code><a href='static_camera.html'>static_camera</a></code> dataset.</p></dd>
 <dt>Officer-issued Speed</dt><dd><p>Offences for exceeding the speed limit detected
 by Police officers</p></dd>
 <dt>Vehicles past cameras</dt><dd><p>The number of radar vehicle detections (whether
@@ -181,9 +200,9 @@ and July 2009.</p>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p><code><a href='excess.html'>excess</a></code>, <code><a href='fleeing_area.html'>fleeing_area</a></code>,
+    <div class='dont-index'><p><code><a href='excess.html'>excess</a></code>, <code><a href='fleeing_area.html'>fleeing_area</a></code>,
 <code><a href='fleeing_district.html'>fleeing_district</a></code>, <code><a href='police_speeding.html'>police_speeding</a></code>,
-<code><a href='police_speeding_band.html'>police_speeding_band</a></code></p>
+<code><a href='police_speeding_band.html'>police_speeding_band</a></code>, <code><a href='static_camera.html'>static_camera</a></code></p></div>
     
 
   </div>
@@ -215,5 +234,8 @@ and July 2009.</p>
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+
