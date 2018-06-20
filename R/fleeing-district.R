@@ -1,13 +1,14 @@
 #' Driving offences in New Zealand
 #'
-#' A dataset of fleeing-driver incidents in New Zealand between 2009 and 2017.
+#' A dataset of fleeing-driver incidents in New Zealand between 2009 and 2018.
 #' Only district-level detail is available.  A subset of fleeing driver
 #' incidents with area-level detail is provided in the dataset
 #' \code{\link{fleeing_area}}.
 #'
 #' @format A data frame with 1116 rows and 5 variables:
 #' \describe{
-#'   \item{value}{Number of incidents}
+#'   \item{value}{Number of deaths and series injuries, incidents, crashes or abandonments}
+#'   \item{series}{The thing being counted by \code{value}}
 #'   \item{district}{Police district}
 #'   \item{month}{Month of the event}
 #' }
@@ -30,9 +31,9 @@
 #' 96% of incidents are were recorded with Area-level detail.
 #'
 #' @source
-#' \url{http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-december-2017}
+#' \url{http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2018}
 #'
 #' @seealso \code{\link{driving_offences}}, \code{\link{excess}},
 #' \code{\link{fleeing_area}}, \code{\link{police_speeding}},
-#' \code{\link{police_speeding_band}}
+#' \code{\link{police_speeding_band}}, \code{\link{static_camera}}
 "fleeing_district"

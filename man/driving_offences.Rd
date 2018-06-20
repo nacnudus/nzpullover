@@ -4,7 +4,7 @@
 \name{driving_offences}
 \alias{driving_offences}
 \title{Driving offences in New Zealand}
-\format{A data frame with 43878 rows and 6 variables:
+\format{A data frame with 60423 rows and 6 variables:
 \describe{
   \item{category}{Type of offence, fine or observation}
   \item{value}{Number of offences, value of fines in New Zealand dollars, or
@@ -15,18 +15,19 @@
   \item{month}{Month of the event}
 }}
 \source{
-\url{http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-december-2017}
+\url{http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2018}
 }
 \usage{
 driving_offences
 }
 \description{
 A dataset containing driving offences, fines, and vehicle observations by
-cameras, in New Zealand between 2009 and 2017.
+cameras, in New Zealand between 2009 and 2018.
 }
 \details{
 The categories of offence are Red Light, Restraints, Alcohol & Drugs, Mobile
-phone, Camera-issued Speed, Officer-issued Speed, and Vehicles past cameras.
+phone, Mobile-camera-issued Speed, Officer-issued Speed, and Vehicles past
+cameras.
 
 
 \describe{
@@ -40,7 +41,8 @@ Alcohol and drug combined offence types are excluded.}
 \item{Mobile phone}{ Offences for using a hand held device for calling or
 texting while driving}
 \item{Camera-issued Speed}{Offences for exceeding the speed limit detected by
-speed cameras.}
+mobile speed cameras.  Static speed camera data is in the
+\code{\link{static_camera}} dataset.}
 \item{Officer-issued Speed}{ Offences for exceeding the speed limit detected
 by Police officers}
 \item{Vehicles past cameras}{The number of radar vehicle detections (whether
@@ -94,6 +96,6 @@ and July 2009.
 \seealso{
 \code{\link{excess}}, \code{\link{fleeing_area}},
 \code{\link{fleeing_district}}, \code{\link{police_speeding}},
-\code{\link{police_speeding_band}}
+\code{\link{police_speeding_band}}, \code{\link{static_camera}}
 }
 \keyword{datasets}

@@ -1,3 +1,15 @@
+# nzpullover 0.4.0
+
+* Updated with data up to March 2018.  The structure of some tables has changed.
+    * The datasets `fleeing_area` and `fleeing_district` of fleeing driver
+        incidents are now broken down by deaths and serious injuries, crashes,
+        incidents, and abandonments.
+    * The dataset `driving_offences` has series for speeding offences detected
+        by cameras.  These have been replaced by series for speeding offences
+        detected by mobile cameras.  Speeding offences detected by static
+        cameras are in the new `static_camera` dataset.
+* Updated the code for the latest development version of `unpivotr`.
+
 # nzpullover 0.3.0
 
 * Updated with data up to December 2017 (the September quarter was skipped by

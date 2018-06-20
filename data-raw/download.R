@@ -1,7 +1,7 @@
-url_source <- "http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-31dec2017.xlsx"
-path_source <-  "./inst/extdata/road-policing-driver-offence-data-1jan2009-31dec2017.xlsx"
+url_source <- "http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-31mar2018.xlsx"
+path_source <-  "./inst/extdata/road-policing-driver-offence-data-1jan2009-31mar2018.xlsx"
 
-download.file(url_source, path_source, mode = "wb")
+# download.file(url_source, path_source, mode = "wb")
 
 source("./data-raw/general-sheets.R")
 source("./data-raw/fleeing.R")
@@ -14,9 +14,10 @@ police_speeding_band <- police_speeding_band
 fleeing_area <- fleeing_area_tidied
 fleeing_district <- fleeing_district_tidied
 
-use_data(driving_offences, overwrite = TRUE)
-use_data(excess, overwrite = TRUE)
-use_data(police_speeding, overwrite = TRUE)
-use_data(police_speeding_band, overwrite = TRUE)
-use_data(fleeing_area, overwrite = TRUE)
-use_data(fleeing_district, overwrite = TRUE)
+usethis::use_data(driving_offences, overwrite = TRUE)
+usethis::use_data(static_camera, overwrite = TRUE)
+usethis::use_data(excess, overwrite = TRUE)
+usethis::use_data(police_speeding, overwrite = TRUE)
+usethis::use_data(police_speeding_band, overwrite = TRUE)
+usethis::use_data(fleeing_area, overwrite = TRUE)
+usethis::use_data(fleeing_district, overwrite = TRUE)

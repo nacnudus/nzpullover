@@ -6,19 +6,20 @@
 \title{Driving offences in New Zealand}
 \format{A data frame with 3441 rows and 5 variables:
 \describe{
-  \item{value}{Number of incidents}
+  \item{value}{Number of deaths and series injuries, incidents, crashes or abandonments}
+  \item{series}{The thing being counted by \code{value}}
   \item{district}{Police district}
   \item{area}{Police area (subdivision of district)}
   \item{month}{Month of the event}
 }}
 \source{
-\url{http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-december-2017}
+\url{http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2018}
 }
 \usage{
 fleeing_area
 }
 \description{
-A dataset of fleeing-driver incidents in New Zealand between 2009 and 2017,
+A dataset of fleeing-driver incidents in New Zealand between 2009 and 2018,
 where area-level detail is available.  Total fleeing driver incidents are
 available with district-level detail only, in the dataset
 \code{\link{fleeing_district}}.
@@ -43,6 +44,6 @@ driver incidents are available with district-level detail only. Approximately
 \seealso{
 \code{\link{driving_offences}}, \code{\link{excess}},
 \code{\link{fleeing_district}}, \code{\link{police_speeding}},
-\code{\link{police_speeding_band}}
+\code{\link{police_speeding_band}}, \code{\link{static_camera}}
 }
 \keyword{datasets}
