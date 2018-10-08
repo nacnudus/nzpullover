@@ -4,7 +4,7 @@
 #' band of vehicles
 #' registered to Police 2009 and 2017.
 #'
-#' @format A data frame with 1673 rows and 6 variables:
+#' @format A data frame with 1955 rows and 6 variables:
 #' \describe{
 #'   \item{value}{Number of speeding vehicle detections}
 #'   \item{series}{The thing being counted by \code{value}}
@@ -70,7 +70,7 @@
 #' July 2009.
 #'
 #' @source
-#' \url{http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2018}
+#' \url{http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-30june2018.xlsx}
 #'
 #' @seealso \code{\link{driving_offences}}, \code{\link{excess}},
 #' \code{\link{fleeing_area}}, \code{\link{fleeing_district}},

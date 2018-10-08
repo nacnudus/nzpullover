@@ -1,5 +1,5 @@
 url_source <- "http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-31mar2018.xlsx"
-path_source <-  "./inst/extdata/road-policing-driver-offence-data-1jan2009-31mar2018.xlsx"
+path_source <-  "./inst/extdata/road-policing-driver-offence-data-1jan2009-30june2018.xlsx"
 
 library(tidyxl)
 library(unpivotr)
@@ -19,15 +19,15 @@ corners <-
   dplyr::filter(font_rgb[local_format_id] == "FFFF0000",
                 font_size[local_format_id] == 10,
                 !is_blank,
-                !is.na(character))
+                !is.na(character)) %>%
+  select(row, col, series = character)
 
 partitions <-
   fleeing %>%
   dplyr::filter(!is_blank,
                 font_size[local_format_id] == 10) %>%
   select(row, col, data_type, character, numeric) %>%
-  partition(corners) %>%
-  mutate(series = corners$character)
+  partition(corners)
 
 fleeing_district_tidied <-
   partitions %>%

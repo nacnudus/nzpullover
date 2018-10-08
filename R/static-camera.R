@@ -3,7 +3,7 @@
 #' A dataset containing driving speed offences, fines, and vehicle observations by
 #' static cameras, in New Zealand between 2009 and 2018.
 #'
-#' @format A data frame with 5296 rows and 8 variables:
+#' @format A data frame with 5522 rows and 8 variables:
 #' \describe{
 #'   \item{value}{Number of offences, value of fines in New Zealand dollars, or
 #'   number of observations}
@@ -45,7 +45,7 @@
 #' and July 2009.
 #'
 #' @source
-#' \url{http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2018}
+#' \url{http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-30june2018.xlsx}
 #'
 #' @seealso \code{\link{excess}}, \code{\link{fleeing_area}},
 #' \code{\link{fleeing_district}}, \code{\link{police_speeding}},

@@ -7,7 +7,7 @@
 #' phone, Mobile-camera-issued Speed, Officer-issued Speed, and Vehicles past
 #' cameras.
 #'
-#' @format A data frame with 60423 rows and 6 variables:
+#' @format A data frame with 62345 rows and 6 variables:
 #' \describe{
 #'   \item{category}{Type of offence, fine or observation}
 #'   \item{value}{Number of offences, value of fines in New Zealand dollars, or
@@ -83,7 +83,7 @@
 #' and July 2009.
 #'
 #' @source
-#' \url{http://www.police.govt.nz/about-us/publication/road-policing-driver-offence-data-january-2009-march-2018}
+#' \url{http://www.police.govt.nz/sites/default/files/publications/road-policing-driver-offence-data-1jan2009-30june2018.xlsx}
 #'
 #' @seealso \code{\link{excess}}, \code{\link{fleeing_area}},
 #' \code{\link{fleeing_district}}, \code{\link{police_speeding}},
